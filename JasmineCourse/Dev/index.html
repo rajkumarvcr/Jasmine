@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.5.2/jasmine.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.5.2/boot.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.5.2/boot.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.5.2/jasmine.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.5.2/jasmine-html.min.js"></script>
+    <script src=""></script>
+    <script>
+        var Calculator = function () {
+            return {
+                Add: function(a, b) {
+                    return a + b;
+                },
+                Subtract: function(a, b) {
+                    return a - b;
+                },
+                Multiply: function(a, b) {
+                    return a * b;
+                },
+                Divide: function (a, b) {
+                    return a / b;
+                }
+            }
+        }
+
+        describe('calculatorSuite', function () {
+
+            var calculator = new Calculator();
+
+            it('should add two numbers supplied', function () {
+                expect(calculator.Add(5, 5)).toBe(10);
+            });
+        })
+        
+    </script>
+</head>
+<body>
+  
+</body>
+</html>
